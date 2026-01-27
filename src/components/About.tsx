@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { GraduationCap, Code, Sparkles } from 'lucide-react';
+import profilePhoto from '@/assets/profile-photo.jpeg';
 
 const quickFacts = [
   {
@@ -40,14 +41,13 @@ const About = () => {
               <div className="absolute inset-4 bg-accent/20 rounded-3xl rotate-6" />
               <div className="absolute inset-4 bg-accent/10 rounded-3xl -rotate-3" />
               
-              {/* Avatar container */}
-              <div className="relative bg-gradient-to-br from-secondary to-muted rounded-3xl overflow-hidden aspect-square flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center mb-4">
-                    <span className="font-serif text-5xl md:text-6xl text-accent-foreground font-bold">SK</span>
-                  </div>
-                  <p className="text-muted-foreground font-medium">Frontend Developer</p>
-                </div>
+              {/* Profile Photo */}
+              <div className="relative rounded-3xl overflow-hidden aspect-square shadow-xl">
+                <img 
+                  src={profilePhoto} 
+                  alt="Sai Keerthana Chakka" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </div>
           </motion.div>

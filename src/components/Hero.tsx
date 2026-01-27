@@ -92,9 +92,12 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              asChild
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a href="/resume/SAIKEERTHANA_C_RESUME.pdf" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </a>
             </Button>
             <Button
               variant="outline"
